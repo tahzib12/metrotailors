@@ -34,6 +34,7 @@ const TeamMember = ({ name, role, image, animation  }) => (
 );
 
 const TeamMetro = () => (
+  <div className='bg-black w-full'>
   <div className="container mx-auto px-4 bg-black pb-16">
      <h2 className="text-red-500 font-bold uppercase text-[40px] text-center" data-aos="fade-down">Our Team</h2>
      <h1 className="text-4xl font-bold text-white text-center mb-14" data-aos="fade-down">Meet Our Expert Team</h1>
@@ -42,6 +43,7 @@ const TeamMetro = () => (
         <TeamMember key={member.name} {...member} />
       ))}
     </div>
+  </div>
   </div>
 );
 
